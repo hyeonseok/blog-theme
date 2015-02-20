@@ -75,6 +75,22 @@ hr {
 }
 
 /* layout */
+#browser-upgrade {
+	font-size: 12px;
+	margin: 0;
+	background: #ffc;
+	border-bottom: 2px outset #fff;
+	position: relative;
+	z-index: 2;
+	top: -10px;
+	line-height: 18px;
+}
+#accessibility {
+	position: absolute;
+	margin: 0;
+	top: -10em;
+	left: -1000em;
+}
 #body:after {
 	content: ".";
 	display: block;
@@ -89,6 +105,19 @@ hr {
 	text-align: right;
 	margin: 0 0 0.5em;
 	line-height: 1.3;
+}
+#foot p img {
+	vertical-align: middle;
+}
+#foot p.member {
+	text-align: center;
+}
+#banner {
+	margin: 1em 0;
+	text-align:center;
+}
+#banner img {
+	vertical-align: middle;
 }
 
 /* main-index */
