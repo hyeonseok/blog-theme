@@ -884,50 +884,52 @@ a.plink {
 	padding: 0 20px 10px;
 }
 #comment-list {
+	list-style: none;
 	margin: 1em 0 0;
-	table-layout: fixed;
+	padding: 0;
+}
+#comment-list li {
+	position: relative;
 	border-top: 1px solid #eee;
-	border-spacing: 0;
-	border-collapse: collapse;
-	width: 100%;
+	padding: 0.4em 5.6em 0.4em 8.8em;
+	height: 1%;
 }
-#comment-list thead th {
-	padding: 0.4em 0;
-	background: #f9f9f9;
-	text-align: center;
-}
-#comment-list thead th.name {
-	width: 7em;
-}
-#comment-list thead th.comment {
-}
-#comment-list thead th.date {
-	width: 6em;
-}
-#comment-list tbody th,
-#comment-list tbody td {
-	border-top: 1px solid #eee;
-	vertical-align: top;
-	padding: 0.4em 0;
-}
-#comment-list tr:hover th, 
-#comment-list tr:hover td {
+#comment-list li:hover, 
+#comment-list li.owner:hover {
 	background-color: #f9f9f9;
 }
-#comment-list tr th img {
-	vertical-align: middle;
+#comment-list li span.number, 
+#comment-list li span.name, 
+#comment-list li span.date {
+	position: absolute;
 }
-#comment-list tbody th {
-	border-top: 1px solid #eee;
-	vertical-align: top;
+#comment-list li span.number {
+	top: 0.45em;
+	left: 0;
+	width: 2.4em;
 	text-align: center;
-	font-weight: normal;
+	font-size: 0.85em;
 }
-#comment-list tbody td.date {
+#comment-list li span.name {
+	top: 0.4em;
+	left: 2em;
+	width: 7em;
+	overflow: hidden;
+	text-align: center;
+	font-weight: bold;
+}
+#comment-list li.owner {
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+	background: #fcfcfc;
+}
+#comment-list li span.date {
+	top: 0.20em;
+	right: 0;
+	width: 7em;
 	text-align: center;
 	font-size: 0.8em;
 	line-height: 1.3em;
-	padding: 0.3em 0 0;
 }
 #seok-comment p.pager-box {
 	margin: 1px 0 0;
